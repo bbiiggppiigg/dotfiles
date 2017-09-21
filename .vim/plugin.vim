@@ -7,8 +7,8 @@ call plug#begin('~/.vim/plugged')
 " Code Completions
 "------------------
 "Plug 'Shougo/neocomplcache'
-Plug 'valloric/youcompleteme'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'valloric/youcompleteme'
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 "Plug 'ervandew/supertab'

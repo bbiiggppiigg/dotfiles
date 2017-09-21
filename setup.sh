@@ -47,9 +47,9 @@ rm -rf ~/.vimrc
 git clone https://github.com/altercation/vim-colors-solarized.git $MYPWD/.vim/plugged/vim-colors-solarized
 ln -s $MYPWD/.vim/vimrc .vimrc
 vim +PlugInstall +qall
-wget https://raw.githubusercontent.com/JDevlieghere/dotfiles/master/.vim/.ycm_extra_conf.py -O ~/.vim/.ycm_extra_conf.py 2>/dev/null
-cd ~/.vim/plugged/youcompleteme/
-./install.py --clang-completer
+#wget https://raw.githubusercontent.com/JDevlieghere/dotfiles/master/.vim/.ycm_extra_conf.py -O ~/.vim/.ycm_extra_conf.py 2>/dev/null
+#cd ~/.vim/plugged/youcompleteme/
+#./install.py --clang-completer
 cd ~
 
 # powerline
@@ -67,6 +67,6 @@ ln -s $MYPWD/.zshrc .zshrc
 ## zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-chsh -s /bin/zsh
+sudo chsh $(USER) -s /bin/zsh
 
 
