@@ -7,11 +7,11 @@ export ZSH=$HOME/.oh-my-zsh
 
 # powerlevel9k
 # ------------------------------------------------------------------------------
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(background_jobs context_joined dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL10K_CONTEXT_DEFAULT_FOREGROUND='white'
+POWERLEVEL10K_PROMPT_ON_NEWLINE=true
+POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(background_jobs context_joined dir rbenv vcs)
+POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(status history time)
 
 # oh-my-zsh
 # ------------------------------------------------------------------------------
@@ -115,7 +115,8 @@ tl () { tmux ls; }
 # pyenv
 # ------------------------------------------------------------------------------
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="/usr/local/bin":"$PYENV_ROOT/bin:$PATH"
+
 eval "$(pyenv init -)"
 
 
